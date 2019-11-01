@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NgStylesComponent } from './components/ng-styles/ng-styles.component';
+import { CssComponent } from './components/css/css.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgStylesComponent
+    NgStylesComponent,
+    CssComponent
   ],
   imports: [
     BrowserModule
