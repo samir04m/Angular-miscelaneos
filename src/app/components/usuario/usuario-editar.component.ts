@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-usuario-editar',
   template: `
-    <p>
-      usuario-editar works!
-    </p>
+      <h3>Usuario Editar</h3>
   `,
   styles: []
 })
