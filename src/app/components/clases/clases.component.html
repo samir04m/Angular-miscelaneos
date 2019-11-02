@@ -2,4 +2,27 @@
   A simple success alert—check it out!
 </div>
 
-<button class=""></button>
+<button class="btn btn-info mx-2 " (click)="alerta = 'alert-info'">Info</button>
+<button class="btn btn-warning mx-2 " (click)="alerta = 'alert-warning'">Warning</button>
+
+<br><br>
+
+<h3 [ngClass]="{'text-danger': propiedades.danger, 'text-info':!propiedades.danger  }">
+   Hola mundo
+</h3>
+
+<button (click)="propiedades.danger = !propiedades.danger" class="btn btn-primary"
+   [ngClass]="{'btn-danger':propiedades.danger, 'btn-info':!propiedades.danger}">
+   Cambiar
+</button>
+
+<br><br>
+<h3>Proceso Asincrono</h3>
+<button name="button"class="btn btn-primary" (click)="ejecutar()"
+   [disabled]="loading">
+
+   <i class="fa" [ngClass]="{'fa-save':!loading, 'fa-refresh fa-spin':loading}"></i>
+   <span *ngIf="!loading"> Guardar Cambios</span>
+   <span *ngIf="loading"> Guardando...</span>
+
+</button>
