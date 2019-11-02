@@ -6,7 +6,7 @@ import { UsuarioDetalleComponent } from './usuario-detalle.component';
 
 export const USUARIO_ROUTES: Routes = [
    { path: 'nuevo', component: UsuarioNuevoComponent },
-   { path: 'editar', component: UsuarioEditarComponent },
+   { path: 'editar/:modo', component: UsuarioEditarComponent },
    { path: 'detalles', component: UsuarioDetalleComponent },
    { path: '**', pathMatch: 'full', redirectTo: 'nuevo' }
 ];
